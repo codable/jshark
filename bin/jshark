@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const getopt = require('posix-getopt');
+const shark = require('..');
+
+let type = 'coap';
+let buf = null;
+
+// parse opts.
+{
+  let parser = new getopt.BasicParser('t:', process.argv);
+  let opt = null;
+  while ((opt = parser.getopt()) !== undefined) {
+    switch (opt.option) {
+      case 't':
+        type = opt.optarg;
+        break;
+
+      default:
+        break;
+    }
+  }
+
+  if (parser.optind() >= process.argv.length) {
+    throw new Error('missing packet');
+  }
+
+  let hex = process.argv[parser.optind()];
+  buf = Buffer.from(hex, 'hex');
+}
+
+console.log(shark.parse(buf, type));

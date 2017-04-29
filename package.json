@@ -1,0 +1,25 @@
+{
+  "name": "jshark",
+  "version": "0.0.1",
+  "description": "The simple tool to parse various packets.",
+  "bugs": {
+    "url" : "https://github.com/owner/project/issues"
+  },
+  "bin": "./bin/jshark",
+  "main": "index.js",
+  "homepage": "https://github.com/codable/jshark",
+  "keywords": ["jshark", "parse", "wireshark", "packet"],
+  "config": {
+    "type": "coap"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Code Able<codable@gmail.com>",
+  "license": "BSD-3-Clause",
+  "repository": "codable/jshark",
+  "dependencies": {
+    "coap-packet": "^0.1.14",
+    "posix-getopt": "^1.2.0"
+  }
+}
