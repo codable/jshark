@@ -3,12 +3,17 @@
   "version": "0.0.2",
   "description": "The simple tool to parse various packets.",
   "bugs": {
-    "url" : "https://github.com/owner/project/issues"
+    "url": "https://github.com/owner/project/issues"
   },
   "bin": "./bin/jshark",
   "main": "index.js",
   "homepage": "https://github.com/codable/jshark",
-  "keywords": ["jshark", "parse", "wireshark", "packet"],
+  "keywords": [
+    "jshark",
+    "parse",
+    "wireshark",
+    "packet"
+  ],
   "config": {
     "type": "coap"
   },
@@ -21,5 +26,9 @@
   "dependencies": {
     "coap-packet": "^0.1.14",
     "posix-getopt": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1"
   }
 }
