@@ -31,4 +31,5 @@ let buf = null;
   buf = Buffer.from(hex, 'hex');
 }
 
-console.log(shark.parse(buf, type));
+let parsed = shark.parse(buf, type);
+console.log(shark.format(parsed));
