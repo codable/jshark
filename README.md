@@ -3,8 +3,16 @@ jshark
 
 A simple tool to parse various packets.
 
+Supported Protocols
+-------------------
+
+* IPv6
+* UDP
+* CoAP
+* Thread Tlv
+
 Usage
-------
+-----
 
 ### ipv6
 
