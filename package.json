@@ -1,6 +1,6 @@
 {
   "name": "jshark",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The simple tool to parse various packets.",
   "bugs": {
     "url": "https://github.com/owner/project/issues"
@@ -12,6 +12,7 @@
     "jshark",
     "parse",
     "wireshark",
+    "thread",
     "packet"
   ],
   "config": {
