@@ -1,6 +1,6 @@
 {
   "name": "jshark",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The simple tool to parse various packets.",
   "bugs": {
     "url": "https://github.com/owner/project/issues"
