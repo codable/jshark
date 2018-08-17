@@ -26,6 +26,7 @@
   "repository": "codable/jshark",
   "dependencies": {
     "coap-packet": "^0.1.14",
+    "crc16-ccitt-node": "^1.0.4",
     "posix-getopt": "^1.2.0"
   },
   "devDependencies": {
